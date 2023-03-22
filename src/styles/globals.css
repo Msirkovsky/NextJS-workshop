@@ -36,10 +36,10 @@ a {
 
 .books-intro {
   display: grid;
-  margin-top: 2rem;
   grid-template-rows: auto 1fr;
   place-content: start center;
   row-gap: 1rem;
+
   padding: 1rem;
 
 }
@@ -55,6 +55,8 @@ a {
 .books-intro p {
   font-size: 1.2rem;
 }
+
+.main {}
 
 .main>div {
   margin: auto;
