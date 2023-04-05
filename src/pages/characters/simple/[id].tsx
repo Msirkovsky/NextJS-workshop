@@ -1,10 +1,11 @@
-/* Simple routing
-Goal:
-  1. Use routing to support the following url: localhost:3000/characters/simple/1
+// Simple routing
+/* Goal:
+ 1. Use routing to fetch one character from https://thronesapi.com/api/v2/Characters/1
 
-Docs: https://nextjs.org/docs/basic-features/pages#scenario-2-your-page-paths-depend-on-external-data 
+ Final url: http://localhost:3000/characters/simple/1
+ Docs: https://nextjs.org/docs/basic-features/pages#scenario-2-your-page-paths-depend-on-external-data
+
 */
-
 import { GetServerSideProps } from "next"
 
 export default function Simple({ character }: IProp) {

@@ -7,6 +7,7 @@ Docs: https://nextjs.org/docs/routing/introduction#linking-between-pages
 */
 
 import { GetServerSideProps } from "next"
+import Link from "next/link"
 
 export default function Links({ character }: IProp) {
 
@@ -16,9 +17,9 @@ export default function Links({ character }: IProp) {
     <span>{character.title}</span>
     <div className="pagination">
       {/* Finish the implementation*/}
-      {character.id > 1 && <span>Previous</span>}
-      {character.id < 52 && <span>Next</span>}
-    </div >
+      {character.id > 1 && <Link href={`/characters/links/${character.id - 1}`}>Previous</Link>}
+      {character.id < 52 && <Link href={{ pathname: '/characters/links/[id]', query: { id: character.id + 1 } }}>Next</Link>}
+    </div>
   </div>
 }
 
