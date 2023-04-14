@@ -74,7 +74,7 @@ a {
   display: grid;
   place-content: center;
   place-items: center;
-  grid-template-columns: minmax(900px, 80vw);
+  grid-template-columns: minmax(500px, 80vw);
   gap: 1rem;
   padding: 1rem;
 }
