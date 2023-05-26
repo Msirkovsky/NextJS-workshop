@@ -54,13 +54,10 @@ export default function Page() {
             {question.answers.map(x => (<div>
               <input key={x.id} type="radio" id={question.id.toString() + x.content} name={question.id.toString()} value="huey" onChange={e => submitAnswer(question, x)} />
               <label htmlFor={question.id.toString()}>{x.content}</label>
-
             </div>)
             )}
             <span
-
               className={`trivia-quiz-message ${question.correct ? 'trivia-quiz-message--correct' : 'trivia-quiz-message--incorrect'}`}
-
             >{question.message}</span>
           </li>
         ))}
