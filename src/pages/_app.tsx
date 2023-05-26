@@ -1,12 +1,12 @@
 import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
-import { Inter } from '@next/font/google'
-const inter = Inter({ subsets: ['latin'] })
+import { NextPage } from 'next'
+import { ReactElement, ReactNode } from 'react'
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <main className={inter.className + " main"}>
+    <main className={" main"}>
       <Component {...pageProps} />
-    </main>
+    </main >
   )
 }

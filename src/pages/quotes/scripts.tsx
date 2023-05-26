@@ -7,8 +7,6 @@ Tasks:
 
 Url: http://localhost:3000/quotes/scripts
 Docs: https://nextjs.org/docs/basic-features/script
-
-Note: Fast reload doesn't work with script tags, you need to refresh the page manually.
 */
 
 import Script from 'next/script'
@@ -22,9 +20,9 @@ export default function Scripts() {
         <p id="script-placeholder"></p>
       </section>
 
-      <Script src="http://localhost:3000/scripts-assets/3.js" />
-      <Script src="http://localhost:3000/scripts-assets/2.js" />
-      <Script src="http://localhost:3000/scripts-assets/1.js" />
+      <Script src="http://localhost:3000/scripts-assets/3.js" strategy='lazyOnload' />
+      <Script src="http://localhost:3000/scripts-assets/2.js" strategy='afterInteractive' />
+      <Script src="http://localhost:3000/scripts-assets/1.js" strategy='beforeInteractive' />
 
       <Script id="finalScript">
         {`

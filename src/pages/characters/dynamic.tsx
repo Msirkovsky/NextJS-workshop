@@ -1,14 +1,15 @@
-/* Advanced routing
-Goal:
-  1. Use routing to fetch one character but all of these patterns have to be supported:
+// Advanced routing
+/* Goal:
+  1. use routing to fetch one character but using all of these patterns:
     http://localhost:3000/characters/dynamic/11
     http://localhost:3000/characters/dynamic/11/GoT
     http://localhost:3000/characters/dynamic/characters/11
     http://localhost:3000/characters/dynamic/GoT/characters/11
 
-Docs: https://nextjs.org/docs/routing/dynamic-routes#catch-all-routes
-*/
 
+Docs: https://nextjs.org/docs/routing/dynamic-routes#catch-all-routes
+
+*/
 import { GetServerSideProps } from "next"
 
 export default function Dynamic({ character }: IProp) {

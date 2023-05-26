@@ -3,7 +3,7 @@ import Link from "next/link"
 export default function Index() {
 
   return (
-    <section className="books-intro">
+    <section className="intro">
       <h1>All pages</h1>
       <p>
         The first worshop is about type of rendering in Next.js. You need to implement/ajdust the following pages:

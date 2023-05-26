@@ -126,3 +126,35 @@ a {
   font-size: 5rem;
 
 }
+
+.trivia-quiz ul {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+.trivia-quiz p {
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+
+.trivia-quiz label {
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.trivia-quiz li {
+  margin-top: 1rem;
+
+}
+
+.trivia-quiz-message {
+  font-weight: bold;
+}
+
+.trivia-quiz-message--incorrect {
+  color: red
+}
+
+.trivia-quiz-message--correct {
+  color: green
+}

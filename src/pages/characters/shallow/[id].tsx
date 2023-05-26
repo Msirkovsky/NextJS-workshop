@@ -1,7 +1,9 @@
-/* Shallow Routing
-Goal: 
-  1. Add shallow routing, i.e. when you click on the next/previous button, the page should not reload.
+// Shallow Routing: 
+/* Goal:
 
+1. Copy the code from src\pages\characters\links\[id].tsx
+2. Rewrite the following code to get rid of "getServerSideProps" and use client side fetching with shallow routing
+ 
 Url: http://localhost:3000/characters/shallow/1
 Docs: https://nextjs.org/docs/routing/shallow-routing
 */

@@ -7,7 +7,12 @@ Goal:
   /image-assets/648050/drogon-spoils-war.jpg => https://d.newsweek.com/en/full/648050/drogon-spoils-war.jpg
 */
 
+
 import Image from 'next/image'
+
+const myLoader = ({ src, quality }: any) => {
+  return src.replace('/image-assets', 'https://d.newsweek.com/en/full')
+}
 
 export default function Images() {
 
@@ -16,7 +21,8 @@ export default function Images() {
       <div className='images-dragons'>
         <h2>Daenerys and her dragon</h2>
         <Image
-          src={'/image-assets/648050/drogon-spoils-war.jpg'} width={2500} height={1875} alt="Daenerys and her dragon go to war" />
+          loader={myLoader}
+          src={'/image-assets/648050/drogon-spoils-war.jpg'} width={2500} height={1875} alt="dragon" />
       </div>
     </section>
   )
