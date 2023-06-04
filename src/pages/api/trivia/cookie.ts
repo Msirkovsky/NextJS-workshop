@@ -13,5 +13,5 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
   // and
   // res.redirect(308, '/');
 
-  res.status(200).json({ message: 'Cookie has been set' });
+  //res.status(200).json({ message: 'Cookie has been set' });
 }

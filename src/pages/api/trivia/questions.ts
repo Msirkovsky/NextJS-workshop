@@ -13,10 +13,10 @@ export function fetchQuestions() {
 export default function handler(req: NextApiRequest, res: NextApiResponse) {
   try {
     const questions = fetchQuestions();
-    // TODO: return the JSON data with HTTP status 200 
-
+    // TODO: return the JSON data with status 200 
+    res.status(200).json(questions);
   } catch (error) {
-    //TODO: returns HTTP 500 with JSON containing the message: Fetching of questions failed.
-
+    //TODO: returns 500 with JSON containing the message: Fetching of questions failed.
+    res.status(500).json({ message: "Fetching of questions failed." });
   }
 }

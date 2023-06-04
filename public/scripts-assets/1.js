@@ -1,0 +1,1 @@
+window.lannisterQuote = (window.lannisterQuote || '') + 'A Lannister '
