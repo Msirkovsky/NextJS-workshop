@@ -64,6 +64,13 @@ a {
   width: max-content;
 }
 
+
+.main .layout-footer {
+  margin: auto;
+  margin-top: 3rem;
+  width: max-content;
+}
+
 .pagination {
   display: flex;
   gap: 1rem;
